@@ -6,8 +6,15 @@
   </script>
   <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-1.2.0.min.css">
   <style>
+  body {
+  	margin-top: 5em;
+  }
+  h2 {
+    text-align: right;
+    color: #999;
+  }
   div#testbox {
-    margin: 15em 0;
+    margin-bottom: 5em 0;
   }
   div.footer ul li {
     list-type: none;
@@ -16,6 +23,9 @@
   }
   </style>
   <script type="text/javascript">
+    setTimeout("alert('thing');bad javascript;", 300);
+  </script>
+  <script type="text/javascript">
     faulty javascript
   </script>
 </head>
@@ -23,15 +33,21 @@
   <div class="container">
   <div class="row">
     <div class="span8 columns offset4">
-      <div id="testbox" class="alert-message block-message">
+      <h2>Test 1</h2>
+      <div id="testbox" class="testbox alert-message block-message">
         <strong>Testing jsErrLog...</strong> If you see this message for a long time something is wrong with jsErrLog, or this page is lacking a JavaScript error!
-    </div>
-    <div class="footer">
-      <hr/>
-      <ul>
-        <li><a href="https://github.com/Offbeatmammal/jsErrLog">jsErrLog on Github</a></li>
-        <li><a href="https://github.com/Offbeatmammal/jsErrLog/issues/new">Report an issue</a></li>
-      </ul>
+      </div>
+      <h2>Test 2</h2>
+      <div id="testbox2" class="testbox alert-message block-message">
+        <strong>Testing jsErrLog...</strong> If you see this message for a long time something is wrong with jsErrLog, or this page is lacking a JavaScript error!
+      </div>
+      <div class="footer">
+        <hr/>
+        <ul>
+          <li><a href="https://github.com/Offbeatmammal/jsErrLog">jsErrLog on Github</a></li>
+          <li><a href="https://github.com/Offbeatmammal/jsErrLog/issues/new">Report an issue</a></li>
+        </ul>
+      </div>
     </div>
   </div>
   </div>
